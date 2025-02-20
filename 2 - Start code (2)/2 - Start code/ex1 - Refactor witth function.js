@@ -18,20 +18,25 @@ let shoppingCart = [
   { name: "Bananas", price: 1.5, quantity: 2 },
   { name: "Oranges", price: 3, quantity: 1 },
 ];
-
-//Function to calculate the total price
-function calculateTotalPrice(shoppingCart) {
-  let totalPrice = 0;
-  for (let item of shoppingCart) {
-    totalPrice += item.price * item.quantity;
-  }
-  return totalPrice;
+function calculateTotalPrice(shoppingCart){
+    let totalPrice=0;
+    shoppingCart.forEach((item)=>{
+        totalPrice += item.price * item.quantity;
+    });
+    return totalPrice;
 }
+let shoppingCart2 = [
+  { name: "Mangoes", price: 4, quantity: 2 },
+  { name: "Pineapples", price: 5, quantity: 1 }
+];
 
 
+let totalPrice= calculateTotalPrice(shoppingCart);
+let totalPrice2= calculateTotalPrice(shoppingCart2);
 // Calculate total price without using functions
-let totalPrice = 0;
-for (let item of shoppingCart) {
-  totalPrice += item.price * item.quantity;
-}
+// let totalPrice = 0;
+// for (let item of shoppingCart) {
+//   totalPrice += item.price * item.quantity;
+// }
 console.log("Total price:", totalPrice);
+console.log("Cart 2 Total:", totalPrice2);

@@ -16,7 +16,7 @@ function findAverage(numbers) {
     debugger;
     sum += numbers[i];
   }
-  return sum / numbers.length;
+  return sum/ numbers.length ;
 }
 
 let scores = [85, 90, 75, 95, 80];

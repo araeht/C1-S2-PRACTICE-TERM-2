@@ -14,7 +14,7 @@
 let originalArray = [1, 2, 3, 4, 5];
 
 function updateArray(array, index, newValue) {
-  let newArray = [...array];
+  let newArray= [...array];
   newArray[index] = newValue;
   return newArray;
 }
