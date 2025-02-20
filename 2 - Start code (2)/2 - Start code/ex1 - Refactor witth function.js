@@ -19,6 +19,16 @@ let shoppingCart = [
   { name: "Oranges", price: 3, quantity: 1 },
 ];
 
+//Function to calculate the total price
+function calculateTotalPrice(shoppingCart) {
+  let totalPrice = 0;
+  for (let item of shoppingCart) {
+    totalPrice += item.price * item.quantity;
+  }
+  return totalPrice;
+}
+
+
 // Calculate total price without using functions
 let totalPrice = 0;
 for (let item of shoppingCart) {
