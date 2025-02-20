@@ -1,0 +1,39 @@
+# Ignore Visual Studio Code settings and extensions
+.vscode/
+.vscode/extensions/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Ignore compiled files and build directories
+build/
+dist/
+out/
+bin/
+obj/
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.a
+
+# Ignore dependency directories
+node_modules/
+venv/
+.env
+.idea/
+__pycache__/
+
+# Ignore Git-related files
+.git/
+.gitignore
